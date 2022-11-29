@@ -1,0 +1,63 @@
+{
+  "employee": [
+    {
+      "id": 2,
+      "name": "shraddha",
+      "city": "pune",
+      "email": "shraddha@gmail.com",
+      "phone": "23423"
+    },
+    {
+      "id": 3,
+      "name": "priya",
+      "city": "pune",
+      "email": "priya@gmail.com",
+      "phone": "9494949"
+    },
+    {
+      "name": "rahul",
+      "city": "mumbai",
+      "phone": "123",
+      "email": "rahul@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "ajay",
+      "city": "jodhpur",
+      "phone": "34",
+      "email": "ajay@123",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "city": "test",
+      "phone": "23423",
+      "email": "test@test",
+      "id": 7
+    },
+    {
+      "name": "abc",
+      "city": "kolhapur",
+      "phone": "456456",
+      "email": "abc@abc",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "test",
+      "city": "etst",
+      "phone": "733434",
+      "email": "test@trst"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

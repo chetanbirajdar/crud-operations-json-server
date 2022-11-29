@@ -1,0 +1,45 @@
+<p>pipe-demo works!</p>
+
+
+<h3>Date Pipe</h3>
+
+<p>Original Value : {{currentDate}}</p>
+
+<div>
+    Date Pipe :
+    {{currentDate | date: 'long'}}
+</div>
+
+<div>Decimal: {{50 | number:'1.4'}}</div>
+
+<div>Title Case {{'title case demo' | titlecase}}</div>
+<div>Uppercase Case {{'upper case demo' | uppercase}}</div>
+<div>Lower Case {{'LOWER case demo' | lowercase}}</div>
+
+{{ 10 | currency:'INR' }}
+
+<div>Custom Pipe : {{5 | rupeePipe }}</div>
+
+<div>{{student}}</div>
+
+<div>{{studentJson | json}}</div>
+
+<!-- Asssignement : Explore all inbuilt pipes -->
+
+<div>
+    Original Array : {{sortArray}}
+</div>
+
+<h3>Pure Sort </h3>
+
+<div>
+    {{sortArray | pureSort}}
+</div>
+
+<h3>Impure Sort </h3>
+
+<div>
+    {{sortArray | impureSort}}
+</div>
+
+<button (click)="addNumber()">Add number</button>

@@ -1,0 +1,37 @@
+<div class="login">
+    <form name="form" #f="ngForm">
+        <div>
+            <label for="">Username</label>
+            <input name="empName" [(ngModel)]="employee.name" minlength="6" #empName="ngModel" type="text" required>
+            <div *ngIf="f.submitted && empName.invalid" class="invalid-feedback">
+                <div *ngIf="empName.errors.required">Username Name is required</div>
+                <div *ngIf="empName.errors.minlength">min length should be 6</div>
+            </div>
+        </div>
+
+        <div>
+            <label for="">password</label>
+            <input name="empPass" [(ngModel)]="employee.password" minlength="6" #empPass="ngModel" type="password"
+                required>
+            <div *ngIf="f.submitted && empPass.invalid" class="invalid-feedback">
+                <div *ngIf="empPass.errors.required">Password is required</div>
+                <div *ngIf="empPass.errors.minlength">min length should be 6</div>
+            </div>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    {{employee | json}}
+</div>
+
+<div>
+    Template Driven Form
+    Uses Formsmodule from @angular/forms
+    All the validation/logic is mostly on template side
+    not simple for Unit Testing
+    validations are aync
+    uses ngmodel
+    can use a model
+    real time binding
+</div>

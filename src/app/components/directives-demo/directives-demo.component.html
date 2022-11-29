@@ -1,0 +1,96 @@
+<p>directives-demo works!</p>
+<h2>Structural Demo</h2>
+
+<div *ngIf="true">
+    <ng-container *ngFor="let item of items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad voluptatibus ipsum?
+
+    </ng-container>
+
+</div>
+
+<h2>Attribute</h2>
+
+<p>Ngmodel</p>
+
+<p>ngclass</p>
+
+<div [ngClass]="{'red-color': true}">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nihil aliquid molestias enim!a
+</div>
+
+
+
+<p>ngstyle</p>
+
+<div appHighlight [ngStyle]="{'background-color': 'red'}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, soluta officiis. Natus ducimus pariatur fugit
+    maiores, commodi aperiam laboriosam esse eaque iste, nemo deserunt a, qui et. Ad praesentium reprehenderit
+    consequuntur
+    modi?
+</div>
+
+<p appHighlight>custom directive</p>
+
+<div appHighlight>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maiores ea! Placeat?
+</div>
+
+<!-- Assignment Conditional ng style and ng class -->
+
+<h2>Ng if</h2>
+<div *ngIf="false">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, explicabo debitis porro odit, vitae quas
+    blanditiis aliquam placeat doloremque, amet pariatur. Dolore rem porro repudiandae ea officiis! Voluptas
+    exercitationem laudantium cum quibusdam?
+</div>
+
+<h2>hidden</h2>
+<div [hidden]="false">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, explicabo debitis porro odit, vitae quas
+    blanditiis aliquam placeat doloremque, amet pariatur. Dolore rem porro repudiandae ea officiis! Voluptas
+    exercitationem laudantium cum quibusdam?
+</div>
+
+<div appHighlight *ngFor="let item of [1,2,3,4,5]">
+    <div>
+        <div>
+            {{item}} : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga laudantium quo quidem!
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div [ngSwitch]="x">
+    <p *ngSwitchCase="1">
+        I will go with Engineering
+    </p>
+    <p *ngSwitchCase="2">
+        I will go with Medical
+    </p>
+    <p *ngSwitchDefault>
+        I will work
+    </p>
+</div>
+
+
+<h1>Attribute directives</h1>
+
+<div [ngStyle]="{'color': 'blue','background-color':'yellow'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Eaque voluptatem ratione
+    quia.</div>
+
+<!-- conditional ngclass/ng style eg   true ? red : blue -->
+
+<div [ngClass]="false ? 'red-color': 'blue-color'">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam dolore consequatur?
+</div>
+
+<div [ngClass]="{'red-color': true}"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis modi dolor
+    saepe.</div>
+
+<h2>Custom directive</h2>
+<div appHighlightYellow>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cumque consequatur atque officia!
+</div>

@@ -1,0 +1,34 @@
+<form class="register" [formGroup]="registerForm" action="">
+    <div>
+        <label for="">Name</label>
+        <input type="text" formControlName="name">
+        <div *ngIf="submitted && f?.['name'].errors" class="invalid-feedback">
+            <div *ngIf="f?.['name'].errors.required">name is required</div>
+        </div>
+    </div>
+    <div>
+        <label for="">City</label>
+        <input type="text" formControlName="city">
+        <div *ngIf="submitted && f?.['city'].errors" class="invalid-feedback">
+            <div *ngIf="f?.['city'].errors.required">city is required</div>
+        </div>
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="text" formControlName="email">
+        <div *ngIf="submitted && f?.['email'].errors" class="invalid-feedback">
+            <div *ngIf="f?.['email'].errors.required">email is required</div>
+            <div *ngIf="f?.['email'].errors.email">email is not valid</div>
+        </div>
+    </div>
+    <div>
+        <label for="">Phone</label>
+        <input type="text" formControlName="phone">
+        <div *ngIf="submitted && f?.['phone'].errors" class="invalid-feedback">
+            <div *ngIf="f?.['phone'].errors.required">phone is required</div>
+        </div>
+    </div>
+    <div>
+        <button (click)="isUpdate ? update() : submit()">{{isUpdate ? 'update':'submit'}}</button>
+    </div>
+</form>

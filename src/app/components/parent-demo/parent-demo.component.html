@@ -1,0 +1,14 @@
+<p appHighlightYellow>parent-demo works!</p>
+{{messageFromChild}}
+
+<!-- 
+<app-child-demo [childProperty]="myInput" (childEvent)="someMethod($event)">
+
+</app-child-demo> -->
+
+<app-child-demo [childProp2]="'2nd Property'" (childEvent2)="someMethod2($event)"></app-child-demo>
+
+
+<div>
+    <button (click)="submit()">submit</button>
+</div>

@@ -1,0 +1,59 @@
+<h2 appHighlightYellow>String interpolation</h2>
+
+{{'hello'}}
+
+{{'2+3'}}
+
+<h2>One Way DB</h2>
+
+<!-- View to component -->
+<!-- component to view -->
+
+{{oneWayDB}}
+
+
+<h2>2 way DB</h2>
+
+<input appHighlight type="text" [(ngModel)]="twoWayDB">
+<button id="GFG">
+    Submit
+</button>
+
+<div>
+    {{twoWayDB}}
+</div>
+
+<h2>Event Binding</h2>
+
+<button (dblclick)="submit('dblclick')" (click)="submit('click')">Event Binding Demo</button>
+
+<h2>Property Binding</h2>
+
+<div autocapitalize="words" [class]="getClass()" [hidden]="isHidden">Lorem ipsum dolor sit amet consectetur
+    adipisicing
+    elit.
+    Nam consequatur
+    aut iusto.</div>
+
+<div>One way db</div>
+
+{{oneWayDB}}
+
+<p>String interpollation is 2 curly braces,
+    it does calculations like addition, multipy
+    it also bind data from component to view.
+</p>
+
+<div> 2 way </div>
+
+<input [(ngModel)]="empName" type="text">
+
+{{empName}}
+
+<h2>Event Binding</h2>
+
+<button (click)="clickEvent('click')" (dblclick)="clickEvent('dblclick')">Submit</button>
+
+<h3>Property Binding</h3>
+
+<input [readonly]="false" [type]="someProperty">
