@@ -9,10 +9,10 @@ import { Menu } from 'src/app/core/models/menu.model';
 export class FullComponent implements OnInit {
 
   menu: Menu[] = [
-    // {
-    //   name: 'Data Binding Demo',
-    //   path: 'data-binding-demo'
-    // },
+    {
+      name: 'Data Binding Demo',
+      path: 'data-binding-demo'
+    },
     {
       name: 'Directives Demo',
       path: 'directives-demo'
